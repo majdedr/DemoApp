@@ -14,5 +14,5 @@ const counterReducer = (state = initialState, action: any) => {
   }
 };
 
-const state = { state: counterReducer };
+const state = { counterState: counterReducer };
 export default state;

@@ -1,8 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
 import { decrement, increment } from "../actions/counterActions";
+import { counterSelector } from "../selectors/counterSelector";
 
-const Counter = (props: any) => {
-  const { state } = useSelector((state: any) => state);
+const Counter = () => {
+  const counter = useSelector(counterSelector);
   const dispatch = useDispatch();
 
   const incrementButtonClick = () => dispatch(increment());
@@ -12,7 +13,7 @@ const Counter = (props: any) => {
     <>
       <button onClick={incrementButtonClick}> {"increment"} </button>
       <br />
-      {state.counter}
+      {counter}
       <br />
       <button onClick={decrememntButtonClick}> {"decrement"} </button>
     </>
