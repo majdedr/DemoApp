@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { decrement, increment } from "../actions/counterActions";
 import { counterSelector } from "../selectors/counterSelector";
 import CustomedButton from "../shared/components/IncrementButton";
+import "../shared/sharedStyle.css";
 
 const Counter = () => {
   const counter = useSelector(counterSelector);
@@ -12,11 +13,17 @@ const Counter = () => {
 
   return (
     <>
-      <CustomedButton onClick={incrementButtonClick} label={"increment"} />
-      <br />
+      <CustomedButton
+        className="button-9"
+        onClick={incrementButtonClick}
+        label={"increment"}
+      />
       {counter}
-      <br />
-      <CustomedButton onClick={decrememntButtonClick} label={"decrement"} />
+      <CustomedButton
+        className="button-6"
+        onClick={decrememntButtonClick}
+        label={"decrement"}
+      />
     </>
   );
 };

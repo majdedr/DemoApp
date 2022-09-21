@@ -3,9 +3,8 @@ import Counter from "./components/Counter";
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <h1>{"React Counter"} </h1>
-      <br />
       <Counter />
     </div>
   );
