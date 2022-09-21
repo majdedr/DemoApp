@@ -1,4 +1,4 @@
-import { DECREMENTCOUNTER, INCREMENTCOUNTER } from "../shared/counterConstants";
+import { DECREMENTCOUNTER, INCREMENTCOUNTER } from "../../shared/counterConstants";
 
 const initialState = { counter: 0 };
 

@@ -1,4 +1,4 @@
-import { INCREMENTCOUNTER, DECREMENTCOUNTER } from "../shared/counterConstants";
+import { INCREMENTCOUNTER, DECREMENTCOUNTER } from "../../shared/counterConstants";
 
 export const increment = () => {
   return {
