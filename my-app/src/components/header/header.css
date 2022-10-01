@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 25%;
+}
+
+.header a{
+    color: 947e9c;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header a:active{
+    color: yellow;
+}

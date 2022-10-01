@@ -8,4 +8,7 @@ export const ROUTES = {
   PROFILE: {
     link: "/profile/",
   },
+  POLL:{
+    link: "/poll",
+  },
 };

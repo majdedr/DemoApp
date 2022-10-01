@@ -3,6 +3,7 @@ import { decrement, increment } from "../store/actions/counterActions";
 import { counterSelector } from "../store/selectors/counterSelector";
 import CustomedButton from "../shared/components/UI/IncrementButton";
 import "../shared/sharedStyle.css";
+import "./styles.css";
 
 const Counter = () => {
   const counter = useSelector(counterSelector);
@@ -12,7 +13,7 @@ const Counter = () => {
   const decrememntButtonClick = () => dispatch(decrement());
 
   return (
-    <>
+    <div className="counterContainer">
       <CustomedButton
         className="button-9"
         onClick={incrementButtonClick}
@@ -24,7 +25,7 @@ const Counter = () => {
         onClick={decrememntButtonClick}
         label={"decrement"}
       />
-    </>
+    </div>
   );
 };
 

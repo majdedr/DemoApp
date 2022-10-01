@@ -1,18 +1,19 @@
 import { useNavigate, useParams } from "react-router-dom";
+import CustomedButton from "../../shared/components/UI/IncrementButton";
 import { ROUTES } from "../../shared/routesData/routes";
 const Profile = () => {
   const navigate = useNavigate();
-  const {username} = useParams();
-  return (<>
+  const { username } = useParams();
+  return (
+    <>
       Profile page form user {username}
-      <button
+      <CustomedButton
+        className="button-9"
         onClick={() => {
           navigate(ROUTES.HOME.link);
         }}
-      >
-        {" "}
-        navigate to homepage{" "}
-      </button>
+        label={"navigate to homepage"}
+      />
     </>
   );
 };

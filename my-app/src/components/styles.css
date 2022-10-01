@@ -1,0 +1,6 @@
+.counterContainer {
+    display: flex;
+    max-height: 66vh;
+    flex-direction: column;
+    text-align: center;
+}
