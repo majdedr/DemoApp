@@ -1,9 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
 import { decrement, increment } from "../store/actions/counterActions";
 import { counterSelector } from "../store/selectors/counterSelector";
-import CustomedButton from "../shared/components/UI/IncrementButton";
 import "../shared/sharedStyle.css";
 import "./styles.css";
+import { CustomedButton } from "../shared/components/UI/incrementButton";
 
 const Counter = () => {
   const counter = useSelector(counterSelector);

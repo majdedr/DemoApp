@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import CustomedButton from "../../shared/components/UI/IncrementButton";
+import {CustomedButton} from "../../shared/components/UI/incrementButton";
 import { ROUTES } from "../../shared/routesData/routes";
 const Profile = () => {
   const navigate = useNavigate();

@@ -56,11 +56,11 @@ label.selected .row .circle {
 .row .circle::after {
     content: "";
     position: absolute;
-    height: 11px;
-    width: 11px;
+    height: 10px;
+    width: 10px;
     background: #ccc;
-    top: 2px;
-    left: 2px;
+    top: 25%;
+    left: 20%;
     border-radius: inherit;
     display: none;
 }
