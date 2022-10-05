@@ -4,7 +4,7 @@ import { Home } from "../../pages/home";
 import { Poll } from "../../pages/poll";
 import { Profile } from "../../pages/profile";
 import { ROUTES } from "../routesData/routes";
-import RouteError from './error/Error';
+import { RouteNotFound } from "./error";
 
 const LazyAbout: any = lazy(() => import("../../pages/about/About"));
 
@@ -23,7 +23,7 @@ const RoutesTemplate = () => {
         }
       />
       <Route path={ROUTES.PROFILE.link + ":username"} element={<Profile />} />
-      <Route path="*" element={<RouteError />} />
+      <Route path="*" element={<RouteNotFound />} />
     </Routes>
   );
 };

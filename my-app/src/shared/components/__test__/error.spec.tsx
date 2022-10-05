@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
-import RouteError from "../error/Error";
+import { RouteNotFound } from "../error";
 
 test("error page renders successfully", () => {
-  render(<RouteError />);
+  render(<RouteNotFound />);
 
   expect(screen.getByText("Page not found")).toBeTruthy();
 });

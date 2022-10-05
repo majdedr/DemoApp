@@ -1,2 +1,2 @@
-const RouteError = () => <div>Page not found</div>;
-export default RouteError;
+const RouteNotFound = () => <div>Page not found</div>;
+export default RouteNotFound;
